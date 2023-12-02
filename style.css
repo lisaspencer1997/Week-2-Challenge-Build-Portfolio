@@ -1,0 +1,33 @@
+:root {
+    background-color: #F2FFE9;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    border-bottom: blue;
+    border: 20px;
+    background-color: #A6CF98;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#navBar h1 {
+    display: flex;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+#navBar 
+
+
+#navigation {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
