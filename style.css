@@ -22,12 +22,57 @@ header {
     padding-left: 20px;
 }
 
-#navBar 
-
 
 #navigation {
     display: flex;
     width: 40%;
     align-items: center;
     justify-content: space-evenly;
+}
+
+/*The photo and text will be aligned within a grid*/
+#pageGrid {
+    margin-top: 10px;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "photoOfMe aboutMe"
+    "skills work";
+}
+
+/*This is the sourcing of the photo and assigning it as the space within the grid*/
+#photoOfMe {
+    grid-area: photoOfMe;
+    background-image: url("IMG_5588.jpg")
+}
+
+/*This is the photo's position within it's box*/
+.positioningPhotoOfMe {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+
+#aboutMe {
+    grid-area: aboutMe;
+    margin-left: 20px;
+}
+
+#skills {
+    grid-area: skills;
+    text-align: center;
+    font-style: italic;
+    justify-content: space-evenly;
+}
+
+#work {
+    grid-area: work;
+    margin-left: 20px;
 }
