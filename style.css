@@ -30,6 +30,10 @@ header {
     justify-content: space-evenly;
 }
 
+#navigation a {
+    text-decoration: none;
+}
+
 /*The photo and text will be aligned within a grid*/
 #pageGrid {
     margin-top: 10px;
@@ -105,17 +109,20 @@ header {
     margin: 0px;
     display: grid;
     height: 500px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "project1 project2"
-    "project3 project4";
+    "project1 project1 project1"
+    "project2 project3 project4";
 }
 
 #project1 {
     grid-area: project1;
     background-image: url("PROJECT1THUMBNAIL.png");
-    background-position: left;
+}
+
+#project1 a {
+    text-decoration: none;
 }
 
 #project2 {
