@@ -95,8 +95,60 @@ header {
 #skillsList p {
     margin-left: 15px;
 }
+
 #work {
     grid-area: work;
     margin-left: 20px;
 }
 
+#workGrid {
+    margin: 0px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "project1 project2"
+    "project3 project4";
+}
+
+#project1 {
+    grid-area: project1;
+    background-image: url("PROJECT1THUMBNAIL.png");
+    background-position: left;
+}
+
+#project2 {
+    grid-area: project2;
+    background-image: url("COMING\ SOON.png");
+}
+
+#project3 {
+    grid-area: project3;
+    background-image: url("COMING\ SOON.png");
+}
+
+#project4 {
+    grid-area: project4;
+    background-image: url("COMING\ SOON.png");
+}
+
+.workGridDesign {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+}
+
+.workHeading {
+    background-color: rgba(85,124,85,0.7);
+    padding: 15px;
+    height: 25px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 5px solid #A6CF98;
+}
