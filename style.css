@@ -39,8 +39,7 @@ header {
     margin-top: 10px;
     display: grid;
     min-height: 500px;
-    height: 70vh;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 5fr;
     grid-template-columns: 1fr 4fr;
     grid-template-areas:
     "photoOfMe aboutMe"
@@ -158,4 +157,47 @@ header {
     text-align: center;
     font-size: 18px;
     border-bottom: 5px solid #A6CF98;
+}
+
+.contactMe {
+    background-color: #A6CF98;
+}
+
+.contactMeHeading {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+#contactMeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#contactMeIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+
+#contactMeIcons img {
+    object-fit: contain;
+    justify-content: space-evenly;
+    width: 10%;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
+#contactMeText {
+    display: flex;
+    flex-direction: row;
 }
